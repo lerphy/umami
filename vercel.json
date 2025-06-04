@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "apps/umami/package.json",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "apps/umami/$1"
+    }
+  ]
+}
